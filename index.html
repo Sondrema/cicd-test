@@ -17,6 +17,7 @@
             <div class="firstdiv">
                 <h1>Joe Banker</h1>
                 <p>Balance: <span id="balance">- </span> kr</p>
+                <p id="outstandingLoan">Outstanding Loan: <span id="loanBalance">- </span> kr</p>
                 <p></p>
                 <button id="loanButton">Get a Loan</button>
             </div>
@@ -25,22 +26,21 @@
                 <p>Pay: <span id="pay">- </span> kr</p>
                 <button id="bankButton">Bank</button>
                 <button id="workButton">Work</button>
+                <button id="repayButton">Repay Loan</button>
             </div>
             <div class="firstdiv">
                 <h1>Laptops</h1>
                 <select name="--Select laptop--" id="laptopSelecter">
-                    <option value="0" selected="selected">Choose laptop...</option>
+                    <option value="" disabled selected hidden>Choose a laptop</option>
                 </select>
                 <h3>Features:</h3>
-                <p>First</p>
-                <p>Second</p>
-                <p>Third</p>
+                <ul id="features"></ul>
             </div>
         </section>
 
         <section id="second-section">
             <div>
-                <img src="1-1213888522NCLT.jpg" alt="Picture of laptop" width="200px">
+                <img id="lapTopImage" src="1-1213888522NCLT.jpg" alt="Picture of laptop" width="200px">
             </div>
             <div>
                 <h1 id="lapTopTitle">Title</h1>

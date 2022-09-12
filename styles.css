@@ -30,7 +30,7 @@ header {
 }
 
 #loanButton {
-    background-color: green;
+    background-color: greenyellow;
 }
 
 #bankButton {
@@ -46,6 +46,11 @@ header {
     background-color: lightskyblue; 
 }
 
+#repayButton {
+    background-color: darkred; 
+    color: white;
+}
+
 button {
     border: none;
     padding: 15px 32px;
@@ -55,6 +60,7 @@ button {
     font-size: 16px;
     border-radius: 8px;
     box-shadow: 0 5px #999;
+    margin: 5px; 
   }
 
 button:hover {background-color: #3e8e41}
