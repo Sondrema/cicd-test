@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Komputer Store App</title>
-    <script src="script.js"></script>
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,19 +16,19 @@
         <section id="first-section">
             <div class="firstdiv">
                 <h1>Joe Banker</h1>
-                <p>Balance 200kr</p>
+                <p>Balance: <span id="balance">- </span> kr</p>
                 <p></p>
                 <button id="loanButton">Get a Loan</button>
             </div>
             <div class="firstdiv">
                 <h1>Work</h1>
-                <p>Pay 0kr</p>
+                <p>Pay: <span id="pay">- </span> kr</p>
                 <button id="bankButton">Bank</button>
                 <button id="workButton">Work</button>
             </div>
             <div class="firstdiv">
                 <h1>Laptops</h1>
-                <select name="--Select laptop--" id="laptop-selecter">
+                <select name="--Select laptop--" id="laptopSelecter">
                     <option value="0" selected="selected">Choose laptop...</option>
                 </select>
                 <h3>Features:</h3>
@@ -43,14 +43,15 @@
                 <img src="1-1213888522NCLT.jpg" alt="Picture of laptop" width="200px">
             </div>
             <div>
-                <h1>Title</h1>
-                <p>Text</p>
+                <h1 id="lapTopTitle">Title</h1>
+                <p id="lapTopDescription">Text</p>
             </div>
             <div>
-                <h3>Price</h3>
+                <h3 id="lapTopPrice">Price</h3>
                 <button id="buyButton">Buy Now</button>
             </div>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
