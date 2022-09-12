@@ -105,24 +105,27 @@ const handleLaptopSelectChange = () => {
 laptopsElement.addEventListener("change", handleLaptopSelectChange); 
 
 const handleGetLoan = () => {
-    const wantedLoan = prompt("Please enter the amount you wish to loan"); 
-   
+    
     if (activeLoan) {
         alert("You can only have one loan. Repay your current loan first"); 
         return; 
     }
 
+    const wantedLoan = prompt("Please enter the amount you wish to loan"); 
+    console.log(wantedLoan); 
     if (parseInt(wantedLoan) > bankBalance*2) {
         alert("You cannot loan more than double of your bank balance!"); 
         return; 
     }
 
-    alert("You got a loan!"); 
-    loanBalance = parseInt(wantedLoan);  
-    loanElement.innerText = loanBalance; 
-    activeLoan = true; 
-    outstandingLoan.style.visibility = "visible"; 
-    repayButton.style.visibility = "visible"; 
+    if (!isNaN(wantedLoan) && wantedLoan != null) {
+        alert("Congratulations! You got a loan!"); 
+        loanBalance = parseInt(wantedLoan);  
+        loanElement.innerText = loanBalance; 
+        activeLoan = true; 
+        outstandingLoan.style.visibility = "visible"; 
+        repayButton.style.visibility = "visible"; 
+    }
 }
 
 loanButton.addEventListener("click", handleGetLoan); 
