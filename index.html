@@ -5,11 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Komputer Store App</title>
-    <script src="script.js"></script>
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Komputer store</h1>
-    
+    <header>
+        <h1>Komputer store</h1>
+    </header>
+    <main>
+        <section id="first-section">
+            <div class="firstdiv">
+                <h1>Joe Banker</h1>
+                <p>Balance: <span id="balance">- </span></p>
+                <p id="outstandingLoan">Outstanding Loan: <span id="loanBalance">- </span></p>
+                <button id="loanButton">Get a Loan</button>
+            </div>
+            <div class="firstdiv">
+                <h1>Work</h1>
+                <p>Pay: <span id="pay">- </span></p>
+                <button id="repayButton">Repay Loan</button>
+                <button id="bankButton">Bank</button>
+                <button id="workButton">Work</button>
+            </div>
+            <div class="seconddiv">
+                <h1>Laptops</h1>
+                <select name="--Select laptop--" id="laptopSelecter">
+                    <option value="" disabled selected hidden>Choose a laptop</option>
+                </select>
+                <h3 id="lapTopFeatures">Features:</h3>
+                <ul id="features"></ul>
+            </div>
+        </section>
+
+        <section id="second-section">
+            <div>
+                <img id="lapTopImage" src="notfound.jfif" alt="Picture of laptop" width="200px">
+            </div>
+            <div>
+                <h1 id="lapTopTitle">Laptop Title</h1>
+                <p id="lapTopDescription">Laptop Description</p>
+            </div>
+            <div>
+                <h3 id="lapTopPrice">Laptop Price</h3>
+                <button id="buyButton">Buy Now</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>

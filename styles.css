@@ -1,0 +1,102 @@
+body {
+    max-width: 1200px;
+    margin: auto; 
+}
+
+header {
+    margin-top: 0;
+    background-color: black;
+    color: white; 
+    padding: 10px;
+    text-align: center;
+}
+
+
+#first-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 8px;
+}
+
+#second-section {
+    background-color: whitesmoke;
+    display: flex;
+    margin: 10px; 
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.firstdiv {
+    background-color: whitesmoke;
+    margin: 10px;  
+    padding: 10px; 
+    width: 20%;
+    max-height:fit-content;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+}
+
+.seconddiv {
+    background-color: whitesmoke;
+    margin: 10px;  
+    padding: 10px; 
+    width: 20%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+}
+
+#loanButton {
+    background-color: greenyellow; 
+}
+
+#bankButton {
+    background-color: yellow;
+}
+
+#workButton {
+    background-color: blue;
+    color: white; 
+}
+
+#buyButton {
+    background-color: lightskyblue; 
+}
+
+#repayButton {
+    background-color: darkred; 
+    color: white;
+}
+
+#laptopSelecter {
+    height: 40px;
+    border-radius: 4px;
+}
+
+button {
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 5px #999;
+    margin: 5px; 
+  }
+
+button:hover {background-color: #3e8e41}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+img {
+    margin: 10px;
+}
