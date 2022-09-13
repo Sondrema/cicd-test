@@ -34,12 +34,24 @@ header {
     margin: 10px;  
     padding: 10px; 
     width: 20%;
+    max-height:fit-content;
     border-radius: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+}
+
+.seconddiv {
+    background-color: whitesmoke;
+    margin: 10px;  
+    padding: 10px; 
+    width: 20%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
 }
 
 #loanButton {
-    background-color: greenyellow;
+    background-color: greenyellow; 
 }
 
 #bankButton {
