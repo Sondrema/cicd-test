@@ -163,7 +163,8 @@ const handleGetLoan = () => {
         return; 
     }
     console.log(wantedLoan); 
-    if (!isNaN(wantedLoan) && wantedLoan != null && wantedLoan != "") {
+    if (!isNaN(wantedLoan) && wantedLoan != null 
+    && wantedLoan != "" && parseInt(wantedLoan) > 0) {
         alert("Congratulations! You got a loan!"); 
         loanBalance = parseInt(wantedLoan);  
         loanElement.innerText = formatCurrency(loanBalance); 
