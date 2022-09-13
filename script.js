@@ -1,7 +1,8 @@
 /**
  * 
  * Komputer Store: a Dynamic Webpage using vanilla JS
- * @autor Sondre Mæhre September 2022
+ * This webpage models a bank, a worker and a list of laptops be bought.
+ * @author Sondre Mæhre September 2022
  * 
  * TODO: 
  * Styling:  
