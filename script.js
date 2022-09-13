@@ -1,14 +1,8 @@
 /**
- * 
  * Komputer Store: a Dynamic Webpage using vanilla JS
- * This webpage models a bank, a worker and a list of laptops be bought.
+ * This webpage models a bank, a worker and a list of laptops that
+ * can be bought. Enjoy!
  * @author Sondre Mæhre September 2022
- * 
- * TODO: 
- * Styling:  
- *  - Responsiveness? 
- * Readme
- * Deploy Heroku?
  */
 
 //declare variables to hold global values
@@ -168,8 +162,8 @@ const handleGetLoan = () => {
         alert("You cannot loan more than double of your bank balance!"); 
         return; 
     }
-
-    if (!isNaN(wantedLoan) && wantedLoan != null) {
+    console.log(wantedLoan); 
+    if (!isNaN(wantedLoan) && wantedLoan != null && wantedLoan != "") {
         alert("Congratulations! You got a loan!"); 
         loanBalance = parseInt(wantedLoan);  
         loanElement.innerText = formatCurrency(loanBalance); 
@@ -220,8 +214,9 @@ const loanPaidBack = (payBack) => {
  */
 const handleBuyLaptop = () => {
     const selectedLaptop = laptops[laptopsElement.selectedIndex - 1];
-    if (bankBalance > parseInt(selectedLaptop.price)) {
-        alert("Congratulations! You are now the owner of the new laptop"); 
+    if (bankBalance >= parseInt(selectedLaptop.price)) {
+        alert("Congratulations! You are now the owner of a "+
+        `new laptop: ${selectedLaptop.title}. Enjoy!`); 
         bankBalance -= parseInt(selectedLaptop.price); 
         balanceElement.innerText = formatCurrency(bankBalance); 
     } else {

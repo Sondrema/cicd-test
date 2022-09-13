@@ -17,6 +17,7 @@ header {
     flex-direction: row;
     justify-content: space-evenly;
     border-radius: 8px;
+    height: max-content;
 }
 
 #second-section {
@@ -33,18 +34,19 @@ header {
     background-color: whitesmoke;
     margin: 10px;  
     padding: 10px; 
-    width: 20%;
-    max-height:fit-content;
+    width: auto;
+    max-height:auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: relative;
+    height: inherit; 
 }
 
 .seconddiv {
     background-color: whitesmoke;
     margin: 10px;  
     padding: 10px; 
-    width: 20%;
+    width: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: relative;
@@ -70,6 +72,8 @@ header {
 #repayButton {
     background-color: darkred; 
     color: white;
+    display: flex;
+    justify-content: center;
 }
 
 #laptopSelecter {
@@ -82,7 +86,7 @@ button {
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: inline-flex;
     font-size: 16px;
     border-radius: 8px;
     box-shadow: 0 5px #999;
@@ -99,4 +103,9 @@ button:active {
 
 img {
     margin: 10px;
+}
+
+.third {
+    flex-direction: column;
+    text-align: center;
 }
