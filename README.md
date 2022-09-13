@@ -18,8 +18,8 @@ A dynamic webpage using “vanilla” JavaScript, CSS & HTML.
 This project is to practice the use of plain Javascript to create a dynamic webpage. 
 It models the following: 
 
-- The Bank – an area where you will store funds and make bank loans
-- Work – an area to increase your earnings and deposit cash into your bank balance
+- The Bank – an area where the user can store funds and make bank loans
+- Work – an area to increase earnings and deposit cash into the bank balance
 - Laptops – an area to select and display information about the merchandise
 
 ### The Bank
