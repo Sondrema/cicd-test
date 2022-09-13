@@ -1,6 +1,7 @@
 # Komputer Store
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+[![pipeline status](https://gitlab.com/NicholasLennox/gradle-ci/badges/master/pipeline.svg)](https://gitlab.com/sondrem/komputer-store/-/commits/master)
 
 A dynamic webpage using “vanilla” JavaScript, CSS & HTML. 
 
