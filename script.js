@@ -167,6 +167,8 @@ const handleGetLoan = () => {
         alert("Congratulations! You got a loan!"); 
         loanBalance = parseInt(wantedLoan);  
         loanElement.innerText = formatCurrency(loanBalance); 
+        bankBalance += loanBalance; 
+        balanceElement.innerText = formatCurrency(bankBalance); 
         activeLoan = true; 
         outstandingLoan.style.visibility = "visible"; 
         repayButton.style.visibility = "visible"; 
