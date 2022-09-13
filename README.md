@@ -46,6 +46,11 @@ Clone repository
 ## Usage
 Use the Live Server VS add-on to run program. 
 
+## Integration
+Includes a gitlab-ci.yml file with a single deploy stage 
+triggered when committing to the master branch.
+The website can be found here: 
+https://sondrem.gitlab.io/komputer-store/ 
 
 ## Built with
 
