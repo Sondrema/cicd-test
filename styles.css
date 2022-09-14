@@ -1,6 +1,5 @@
 body {
-    max-width: 1200px;
-    margin: auto; 
+    margin: 0; 
 }
 
 header {
@@ -11,11 +10,10 @@ header {
     text-align: center;
 }
 
-
 #first-section {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     border-radius: 8px;
     height: max-content;
 }
@@ -31,22 +29,24 @@ header {
 }
 
 .firstdiv {
+    flex:1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     background-color: whitesmoke;
     margin: 10px;  
     padding: 10px; 
-    width: auto;
-    max-height:auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: relative;
-    height: inherit; 
+
 }
 
 .seconddiv {
-    background-color: whitesmoke;
+    flex:1; 
+    background-color: whitesmoke; 
     margin: 10px;  
     padding: 10px; 
-    width: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: relative;
@@ -62,7 +62,8 @@ header {
 
 #workButton {
     background-color: blue;
-    color: white; 
+    color: white;
+    
 }
 
 #buyButton {
@@ -73,7 +74,6 @@ header {
     background-color: darkred; 
     color: white;
     display: flex;
-    justify-content: center;
 }
 
 #laptopSelecter {
@@ -91,9 +91,10 @@ button {
     border-radius: 8px;
     box-shadow: 0 5px #999;
     margin: 5px; 
+    justify-content: center;
   }
 
-button:hover {background-color: #3e8e41}
+button:hover {background-color: #3e8e41;}
 
 button:active {
   background-color: #3e8e41;
@@ -109,3 +110,13 @@ img {
     flex-direction: column;
     text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+    #first-section {
+        flex-direction: column;
+    }
+    #second-section {
+        flex-direction: column;
+        justify-content: center;
+    }
+  }
