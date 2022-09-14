@@ -148,32 +148,45 @@ const transferToBank = () => {
  * This method handles the actions required when user clicks 
  * on the "Get a loan" button. Check if the user already has an active 
  * loan. Then checks if the amount entered is valid and not greater than 
- * 2 times the bankBalance. If all good: create loan. Enable info about
- * loan in bank and "Repay loan" button in "Work" section.
+ * 2 times the bankBalance. If all good: create loan.
  */
 const handleGetLoan = () => {
     if (activeLoan) {
         alert("You can only have one loan. Repay your current loan first"); 
         return; 
     }
-
-    const wantedLoan = prompt("Please enter the amount you wish to loan"); 
+    
+    const wantedLoan = prompt("Please enter the amount you wish to loan").trim(); 
+    
+    if (wantedLoan == null) return; //user cancelled
+     
+    if (isNaN(wantedLoan) || wantedLoan == "" || parseInt(wantedLoan) < 1) {
+        alert("Incorrect input. Must be a positive number. Please try again"); 
+        return;     
+    }
+    
     if (parseInt(wantedLoan) > bankBalance*2) {
         alert("You cannot loan more than double of your bank balance!"); 
         return; 
     }
-    console.log(wantedLoan); 
-    if (!isNaN(wantedLoan) && wantedLoan != null 
-    && wantedLoan != "" && parseInt(wantedLoan) > 0) {
-        alert("Congratulations! You got a loan!"); 
-        loanBalance = parseInt(wantedLoan);  
-        loanElement.innerText = formatCurrency(loanBalance); 
-        bankBalance += loanBalance; 
-        balanceElement.innerText = formatCurrency(bankBalance); 
-        activeLoan = true; 
-        outstandingLoan.style.visibility = "visible"; 
-        repayButton.style.visibility = "visible"; 
-    }
+
+    giveLoan(wantedLoan); 
+}
+
+/**
+ * Grant the user a loan. Enable info about
+ * loan in bank and "Repay loan" button in "Work" section.
+ * @param {*} wantedLoan the loan to be given to user. 
+ */
+const giveLoan = (wantedLoan) => {
+    alert("Congratulations! You got a loan!"); 
+    loanBalance = parseInt(wantedLoan);  
+    loanElement.innerText = formatCurrency(loanBalance); 
+    bankBalance += loanBalance; 
+    balanceElement.innerText = formatCurrency(bankBalance); 
+    activeLoan = true; 
+    outstandingLoan.style.visibility = "visible"; 
+    repayButton.style.visibility = "visible"; 
 }
 
 /**

@@ -63,7 +63,6 @@ header {
 #workButton {
     background-color: blue;
     color: white;
-    
 }
 
 #buyButton {
@@ -104,6 +103,7 @@ button:active {
 
 img {
     margin: 10px;
+    text-align: center;
 }
 
 .third {
