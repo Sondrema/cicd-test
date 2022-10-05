@@ -31,7 +31,7 @@ jobs:
       with:
         push: true
         tags: cicdtestdeploy.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_72368042ee86460bb0969207a42afb86 }}/test:${{ github.sha }}
-        file: ./Dockerfile
+        file: ./BlazorApp1/Server/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
